@@ -1,0 +1,6 @@
+# source PDFs are large (up to 58MB) — re-fetch with scripts/download.sh
+data/*/*.pdf
+# OCR page renders (regenerable from the 2021 Twi PDF)
+data/2021/ocr/*.png
+__pycache__/
+.claude/
