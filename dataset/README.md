@@ -50,7 +50,7 @@ quadgram statistics from the clean 2023 documents plus manual cribs, and digits
 cross-validated between the two language versions. Sentences were aligned with
 a monotone dynamic-programming aligner driven by lexical anchors, then filtered
 with the GhanaNLP Twi-English QE model. Full pipeline:
-<https://github.com/michsethowusu/citizens-budget-aligned-twi>
+<https://github.com/michsethowusu/citizens-budget-aligned>
 
 The 2021 edition exists only as a scanned PDF; its OCR-derived pairs are
 excluded from this release (available as silver data in the GitHub repo).

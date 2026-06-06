@@ -19,8 +19,19 @@ extracted from the Government of Ghana *Citizens' Budget* publications
 ## Source documents
 
 `data/<year>/` holds all 23 PDFs (2021–2025; English, Asante Twi, Dagbani, Dangme,
-Ewe, Ga, Gonja, Nzema where published). Twi exists only for 2021–2023; English-only
-for 2024/2025.
+Ewe, Ga, Gonja, Nzema where published — fetch with `scripts/download.sh`). Twi
+exists only for 2021–2023; English-only for 2024/2025.
+
+## Align it for your language!
+
+Only the Twi↔English pair has been aligned so far, but the same documents exist
+in **Dagbani, Dangme, Ewe, Ga, Gonja and Nzema** — and the aligner
+(`scripts/align_dp.py`) is language-independent: it matches on shared numbers,
+retained English terms and length ratio, so it should work for any of these
+languages against English with no model needed. The 2022 PDFs for other
+languages may need the same cipher-cracking treatment as Twi
+(`scripts/solve_2022_cipher.py` — use a clean 2023 same-language document as
+the reference). Contributions welcome.
 
 ## Pipeline (scripts/, in order)
 
